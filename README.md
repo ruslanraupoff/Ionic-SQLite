@@ -14,4 +14,4 @@ ionic cordova platform add ios
 ionic cordova run ios
 ionic cordova run android
 ```
-:heart: by [Ruslan Raupov](https://github.com/ruslanraupov)
+</>  by [Ruslan Raupov](https://github.com/ruslanraupov)

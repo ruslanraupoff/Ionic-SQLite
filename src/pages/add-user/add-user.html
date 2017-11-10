@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Add User</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-list inset>
+  
+    <ion-item>
+      <ion-label >First Name</ion-label>
+      <ion-input type="text" [(ngModel)] = "user.firstname"  required = ""></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label >Last Name</ion-label>
+      <ion-input type="text" [(ngModel)] = "user.lastname"  required = ""></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  <div padding>
+      <button ion-button (tap)="addUser()" color="secondary">Add User</button>
+  </div>
+</ion-content>

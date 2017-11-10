@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Edit User</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="editUser()">
+  
+  <ion-list inset>
+  
+    <ion-item>
+      <ion-label >First Name</ion-label>
+      <ion-input type="text" [(ngModel)]="user.firstname" name="firstname" required></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label >Last Name</ion-label>
+      <ion-input type="text" [(ngModel)]="user.lastname" name="lastname" required></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  <ion-input type="hidden" [(ngModel)]="user.id" name="id"></ion-input>
+  <div padding>
+      <button ion-button type="submit" color="secondary">Update User</button>
+  </div>
+</form>
+</ion-content>
